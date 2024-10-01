@@ -4,10 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seconda Giornata HTML</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Tabelle e Forms</h1>
     </header>
+    <main>
+      <table>
+        <thead>
+          <!-- nel thead solitamente ci va una sola righa -->
+          <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Etá</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tommaso</td>
+            <td>Cesaro</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Mario</td>
+            <td>Rossi</td>
+            <td>28</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Etá media</td>
+            <td>20</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
   </body>
 </html>
